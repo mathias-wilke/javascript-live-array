@@ -22,6 +22,12 @@ function removePop() {
     displayArray();
 }
 
+function getValueAtIndex() {
+    const index = parseInt(document.getElementById('indexInput').value);
+    const value = array[index];
+    document.getElementById('indexOutput').innerText = value !== undefined ? value : 'Index out of bounds';
+}
+
 function displayArray() {
     document.getElementById('output').innerText = array.join(', ');
 }
