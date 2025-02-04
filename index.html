@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Live Array</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>JavaScript Live Array</h1>
     <p>An array is a data structure that stores a collection of elements. These elements can be accessed by their index.</p>
-    <input type="text" name="" id="input">
-    <input type="button" value="Push" onclick="addPush();">
-    <input type="button" value="Unshift" onclick="addUnshift();">
-    <h2>Output:</h2>
+    <div class="input-group">
+        <input type="text" id="input" placeholder="Enter value">
+        <input type="button" value="Push" onclick="addPush();">
+        <input type="button" value="Unshift" onclick="addUnshift();">
+    </div>
+    <hr>
+    <h2>Array Data:</h2>
     <p id="output"></p>
-    <input type="button" value="Shift" onclick="removeShift();">
-    <input type="button" value="Pop" onclick="removePop();">
-    <br><br>
-    <input type="text" id="indexInput" placeholder="Enter index">
-    <input type="button" value="Get Value" onclick="getValueAtIndex();">
-    <p id="indexOutput"></p>
+    <div class="input-group">
+        <input type="button" value="Shift" onclick="removeShift();">
+        <input type="button" value="Pop" onclick="removePop();">
+    </div>
+    <hr>
+    <h2 id="indexOutput">Output:</h2>
+    <div class="input-group">
+        <input type="text" id="indexInput" placeholder="Enter index">
+        <input type="button" value="Get Value" onclick="getValueAtIndex();">
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
